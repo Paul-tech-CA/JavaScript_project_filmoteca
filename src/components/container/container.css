@@ -1,0 +1,27 @@
+/* ======================  НАШ КОНТЕЙНЕР      ====================================== */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 75px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 20px;
+    max-width: 1200px;
+  }
+}
+/* =================================================================================== */

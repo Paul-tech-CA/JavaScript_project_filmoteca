@@ -1,0 +1,51 @@
+@import './components/container/container.css';
+@import './components/footer/footer.css';
+@import './components/header/header.css';
+@import './components/button/button.css';
+@import './components/popularMovies/fetch_mov.css';
+@import './components/loader/loader.css';
+@import './components/movieCard/movieCard.css';
+@import './components/pagination/pagination.css';
+@import './components/movieCard/socials.css';
+@import './components/main/youtube/youtube.css';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  /* =================================== */
+  position: relative; 
+  min-height: 100vh;
+  padding-bottom: 140px;
+
+}
+@media screen and (min-width:768px){
+ body{
+    padding-bottom: 138px;
+  }
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.is-hidden {
+  display: none;
+}

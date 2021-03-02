@@ -1,0 +1,45 @@
+<div class="container cont-film">
+    <img class="img-movie-card" src="https://image.tmdb.org/t/p/w300{{poster_path}}" alt="{{title}}">
+    <div class="wrapper">
+        <p class="title">{{title}}</p>
+        <ul class="list">
+            <li class="list-item">
+                <p>Рейтинг</p>
+                <span class="item-vote">{{vote_average}}</span> /
+                <span class="item-votes">{{vote_count}}</span>
+            </li>
+            <li class="list-item">
+                <p>Популярность</p>
+                <span class="item-popularity">{{popularity}}</span>
+            </li>
+            <li class="list-item">
+                <p>Оригинальное название</p>
+                <span class="item-original-title">{{original_title}}</span>
+            </li>
+            <li class="list-item">
+                <p class="gender">Жанр</p>
+                {{#each genres}}
+                <span class="item-genre">{{this.name}}|</span>
+                {{/each}}
+            </li>
+        </ul>
+        <p class="about">Описание</p>
+        <p class="about-text">{{overview}}</p>
+        <button class="button btn-to-watched js-watched" type="button">Добавить в просмотренные</button>
+        <button class="button btn-to-queue js-queue" type="button">Добавить к просмотру</button>
+        <div class="share-btns">
+            <button id="openTrailer" type="button"> <img class="playSvg" alt="" /></button>
+            <a class="facebook" rel="nofollow" href="javascript: void(0)"
+                onClick="window.open('https://www.facebook.com/sharer.php?u=АДРЕС_СТРАНИЦЫ','sharer','status=0,toolbar=0,width=650,height=500');"
+                title="Поделиться в Facebook"></a>
+            <a class="twitter" rel="nofollow" href="javascript: void(0)"
+                onClick="window.open('https://twitter.com/intent/tweet?text=ТАЙТЛ_СТРАНИЦЫ. ОПИСАНИЕ. СССЫЛКА','sharer','status=0,toolbar=0,width=650,height=500');"
+                title="Твитнуть"></a>
+            <a class="telegram" rel="nofollow" href="javascript: void(0)"
+                onClick="window.open('https://telegram.me/share/url?url=АДРЕС_СТРАНИЦЫ','sharer','status=0,toolbar=0,width=650,height=500');"
+                title="Поделиться в Телеграм"></a>
+        </div>
+        <div id="playerContainer">
+        </div>
+    </div>
+</div>

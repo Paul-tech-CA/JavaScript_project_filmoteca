@@ -1,0 +1,38 @@
+.share-btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.share-btns a {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+
+
+.share-btns a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.share-btns a.facebook {
+    background-image: url("../../images/icons/facebook.svg");
+
+}
+
+
+.share-btns a.telegram {
+    background: url("../../images/icons/telegram.svg") ;
+    background-size: contain;
+  
+  
+}
+.share-btns a.twitter {
+    background: url("../../images/icons/twitter.svg")
+    
+}

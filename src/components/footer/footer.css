@@ -1,0 +1,139 @@
+.footer {
+  background-color: #e9e0e0;
+  text-align: center;
+  padding: 28px 0 30px 0;
+  /* ===================================== */
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #545454;
+}
+
+.footer-description {
+  font-size: 16px;
+  line-height: 19px;
+  color: #545454;
+}
+
+.footer-description__icon {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.main-cont {
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(15, 15, 15);
+  z-index: 2;
+}
+
+.modal {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: fixed;
+
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 80%;
+  height: 90%;
+  color: #ffffff;
+  /* background-color: #252626; */
+  background-image: url(https://exoft.net/wp-content/uploads/2020/11/hero-image.jpg);
+  background: linear-gradient(
+    to top rgb(209, 207, 207),
+    rgb(155, 153, 153) 25%,
+    #606161 50%,
+    #484949 75%,
+    #252626 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  overflow-y: scroll;
+  padding-bottom: 30px;
+  animation: our-team 0.7s linear;
+}
+
+@keyframes our-team {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.modalWindow-item {
+  width: 25%;
+  text-align: center;
+  height: 300px;
+}
+
+.modalWindow-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.our-team__name {
+  font-size: 42px;
+  padding: 30px 0;
+  text-align: center;
+  color: #31c923;
+}
+
+.our-team__picture {
+  object-fit: cover;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+
+.our-team__picture:hover {
+  transform: scale(1.4);
+}
+
+.teammates-name {
+  margin-bottom: 30px;
+}
+
+.our-team__position {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.button-footer {
+  display: block;
+  margin: 0 auto;
+  transition: 0.7s;
+}
+
+.button-footer:hover {
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 767px) {
+  .modalWindow-item {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modalWindow-item {
+    width: 32%;
+  }
+}

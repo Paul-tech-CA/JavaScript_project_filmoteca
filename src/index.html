@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Webpack Starter Kit</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Reggae+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav class="site-nav">
+        <a class="logo" href="./index.html">
+          <img class=" logo-svg" src="./images/logo.svg" alt="logo">
+          <span class="logo-text">Filmoteka</span>
+        </a>
+        <ul class="site-nav-link list">
+          <li class="item home-js current">
+            <a href="./index.html"><span class="english">HOME</span><span class="russian">ГЛАВНАЯ</span></a>
+          </li>
+          <li class="item library-js">
+            <a href="#"><span class="english">MY LIBRARY</span><span class="russian">МОЯ БИБЛИОТЕКА</span></a>
+          </li>
+          <li class="theme-switch__control">
+            <a href="./index.html" width="10px" height="10px"></a>
+            <input class="theme-switch__toggle" type="checkbox" name="theme" id="theme-switch-toggle" />
+            <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle">
+            </label>
+            <div aria-hidden="true" class="theme-switch__marker"></div>
+          </li>
+        </ul>
+      </nav>
+      <form class="search-form" id="search-form">
+        <input class="search-form-input" type="text" name="query" autocomplete="off" />
+      </form>
+      <div class="header-button">
+        <button class="button watch is-hidden is-active" type="button"><span class="english">WATCHED</span><span
+            class="russian">ПРОСМОТРЕННЫЕ</span></button>
+        <button class="button queue is-hidden" type="button"><span class="english">QUEUE</span><span class="russian">В
+            ОЧЕРЕДИ</span></button>
+      </div>
+    </div>
+  </header>
+  <main class="main-cont">
+    <div class="container">
+      <div class="loader"></div>
+      <ul class="film-list">
+      </ul>
+    </div>
+    <div id="pagDiv">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-description">
+        © 2021 | All Rights Reserved |
+        <span class="english">Developed with</span><span class="russian">Разработано с</span>
+        <img class="footer-description__icon" src="./images/icons/love.svg" width="14px" height="14px" alt="" />
+        <span class="english">by</span>
+        <a class="footer-description__link" href="">
+          <span class="english">GoIT Students</span><span class="russian">студентами GoIT</span>
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

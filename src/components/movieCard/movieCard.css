@@ -1,0 +1,144 @@
+.img-movie-card {
+  width: 280px;
+  height: 416px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.list-item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8c8c8c;
+  display: flex;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item-vote {
+  margin-left: 41px;
+  display: inline-block;
+  width: 36px;
+  height: 16px;
+  background: #ff6b01;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.item-votes {
+  display: inline-block;
+  width: 36px;
+  height: 16px;
+  background: #f7f7f7;
+  text-align: center;
+  border-radius: 5px;
+  color: #000000;
+}
+.item-popularity {
+  margin-left: 53px;
+  color: #000000;
+}
+.item-original-title {
+  margin-left: 39px;
+  color: #000000;
+}
+.item-genre {
+  color: #000000;
+}
+.gender + span {
+  margin-left: 76px;
+}
+
+.about {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.about-text {
+  width: 279px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.btn-to-watched {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+color: black;
+
+  outline: none;
+}
+.btn-to-queue {
+  background-color: white;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  color: black;
+  outline: none;
+}
+.btn-back{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/icons/button-back-1.svg);
+  background-size: cover;
+  position: absolute;
+  right: 14px;
+  top: 435px;
+}
+.js-clicked {
+  background-color: green;
+  color: white;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cont-film {
+    display: flex;
+    justify-content: center;
+  }
+  .img-movie-card {
+    width: 294px;
+    margin-bottom: 0;
+  }
+  .wrapper {
+    margin-left: 30px;
+  }
+  .about-text {
+    margin-bottom: 20px;
+  }
+  .btn-to-queue {
+    margin-left: 15px;
+  }
+  .js-clicked {
+    background-color: green;
+    color: white;
+    outline: none;
+  }
+  .btn-back{
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .js-clicked {
+    background-color: green;
+    color: white;
+    outline: none;
+  }
+}
